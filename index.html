@@ -4,60 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人博客</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f0f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ffb6c1;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #ff69b4;
-            color: #fff;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section img, .section video {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        footer {
-            background-color: #ffb6c1;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -65,41 +12,14 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#asia">亚洲</a></li>
-            <li><a href="#europe">欧洲</a></li>
-            <li><a href="#cos">COS</a></li>
+            <li><a href="asia.html">亚洲</a></li>
+            <li><a href="europe.html">欧洲</a></li>
+            <li><a href="cos.html">COS</a></li>
         </ul>
     </nav>
     <div class="container">
-        <div id="asia" class="section">
-            <h2>亚洲</h2>
-            <p>这里展示关于亚洲的内容。</p>
-            <img src="path/to/asia-image.jpg" alt="亚洲风景">
-            <video controls>
-                <source src="path/to/asia-video.mp4" type="video/mp4">
-                您的浏览器不支持视频播放。
-            </video>
-        </div>
-
-        <div id="europe" class="section">
-            <h2>欧洲</h2>
-            <p>这里展示关于欧洲的内容。</p>
-            <img src="path/to/europe-image.jpg" alt="欧洲风景">
-            <video controls>
-                <source src="path/to/europe-video.mp4" type="video/mp4">
-                您的浏览器不支持视频播放。
-            </video>
-        </div>
-
-        <div id="cos" class="section">
-            <h2>COS</h2>
-            <p>这里展示关于COS的内容。</p>
-            <img src="path/to/cos-image.jpg" alt="COS图像">
-            <video controls>
-                <source src="path/to/cos-video.mp4" type="video/mp4">
-                您的浏览器不支持视频播放。
-            </video>
-        </div>
+        <h2>主页</h2>
+        <p>选择一个主题查看更多内容。</p>
     </div>
     <footer>
         <p>版权所有 © 2024</p>
