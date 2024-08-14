@@ -1,127 +1,108 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的粉色少女风博客</title>
+    <title>我的个人博客</title>
     <style>
         body {
-            background-color: #ffe6f2;
             font-family: Arial, sans-serif;
+            background-color: #f8f0f8;
             color: #333;
             margin: 0;
             padding: 0;
         }
-
         header {
-            background-color: #ff99cc;
-            padding: 20px;
+            background-color: #ffb6c1;
+            color: #fff;
+            padding: 10px 20px;
             text-align: center;
-            font-size: 2em;
-            color: white;
         }
-
         nav {
-            background-color: #ff66b2;
-            overflow: hidden;
+            background-color: #ff69b4;
+            color: #fff;
+            padding: 10px;
         }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
         }
-
-        nav a:hover {
-            background-color: #ff3399;
-            color: white;
-        }
-
         .container {
             padding: 20px;
         }
-
-        .content {
-            margin: 20px 0;
+        .section {
+            margin-bottom: 40px;
         }
-
-        .image-gallery,
-        .video-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .image-gallery img,
-        .video-gallery video {
-            width: calc(33% - 10px);
+        .section img, .section video {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto;
         }
-
         footer {
-            background-color: #ff99cc;
-            padding: 10px;
+            background-color: #ffb6c1;
+            color: #fff;
             text-align: center;
-            color: white;
+            padding: 10px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
-
 <body>
     <header>
-        欢迎来到我的粉色少女风博客
+        <h1>欢迎来到我的博客</h1>
     </header>
     <nav>
-        <a href="#home">首页</a>
-        <a href="#images">图片展示</a>
-        <a href="#videos">视频展示</a>
-        <a href="#contact">联系我</a>
+        <ul>
+            <li><a href="#asia">亚洲</a></li>
+            <li><a href="#europe">欧洲</a></li>
+            <li><a href="#cos">COS</a></li>
+        </ul>
     </nav>
     <div class="container">
-        <section id="home" class="content">
-            <h2>关于我</h2>
-            <p>这里是我的博客，记录生活中的点点滴滴。</p>
-        </section>
-        <section id="images" class="content">
-            <h2>图片展示</h2>
-            <div class="image-gallery">
-                <img src="image1.jpg" alt="图片1">
-                <img src="image2.jpg" alt="图片2">
-                <img src="image3.jpg" alt="图片3">
-                <!-- 更多图片可在此处添加 -->
-            </div>
-        </section>
-        <section id="videos" class="content">
-            <h2>视频展示</h2>
-            <div class="video-gallery">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    您的浏览器不支持HTML视频。
-                </video>
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    您的浏览器不支持HTML视频。
-                </video>
-                <!-- 更多视频可在此处添加 -->
-            </div>
-        </section>
-        <section id="contact" class="content">
-            <h2>联系我</h2>
-            <p>QQ: 123456789</p>
-            <p>欢迎通过QQ与我联系！</p>
-        </section>
+        <div id="asia" class="section">
+            <h2>亚洲</h2>
+            <p>这里展示关于亚洲的内容。</p>
+            <img src="path/to/asia-image.jpg" alt="亚洲风景">
+            <video controls>
+                <source src="path/to/asia-video.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+
+        <div id="europe" class="section">
+            <h2>欧洲</h2>
+            <p>这里展示关于欧洲的内容。</p>
+            <img src="path/to/europe-image.jpg" alt="欧洲风景">
+            <video controls>
+                <source src="path/to/europe-video.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+
+        <div id="cos" class="section">
+            <h2>COS</h2>
+            <p>这里展示关于COS的内容。</p>
+            <img src="path/to/cos-image.jpg" alt="COS图像">
+            <video controls>
+                <source src="path/to/cos-video.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
     </div>
     <footer>
-        版权所有 © 2024 我的粉色少女风博客
+        <p>版权所有 © 2024</p>
     </footer>
 </body>
-
 </html>
