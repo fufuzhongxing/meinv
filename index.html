@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的粉色少女风博客</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff99cc;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+        }
+
+        nav {
+            background-color: #ff66b2;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ff3399;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .image-gallery,
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .image-gallery img,
+        .video-gallery video {
+            width: calc(33% - 10px);
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #ff99cc;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        欢迎来到我的粉色少女风博客
+    </header>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#images">图片展示</a>
+        <a href="#videos">视频展示</a>
+        <a href="#contact">联系我</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="content">
+            <h2>关于我</h2>
+            <p>这里是我的博客，记录生活中的点点滴滴。</p>
+        </section>
+        <section id="images" class="content">
+            <h2>图片展示</h2>
+            <div class="image-gallery">
+                <img src="image1.jpg" alt="图片1">
+                <img src="image2.jpg" alt="图片2">
+                <img src="image3.jpg" alt="图片3">
+                <!-- 更多图片可在此处添加 -->
+            </div>
+        </section>
+        <section id="videos" class="content">
+            <h2>视频展示</h2>
+            <div class="video-gallery">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    您的浏览器不支持HTML视频。
+                </video>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    您的浏览器不支持HTML视频。
+                </video>
+                <!-- 更多视频可在此处添加 -->
+            </div>
+        </section>
+        <section id="contact" class="content">
+            <h2>联系我</h2>
+            <p>QQ: 123456789</p>
+            <p>欢迎通过QQ与我联系！</p>
+        </section>
+    </div>
+    <footer>
+        版权所有 © 2024 我的粉色少女风博客
+    </footer>
+</body>
+
+</html>
